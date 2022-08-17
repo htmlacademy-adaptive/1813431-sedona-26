@@ -1,1 +1,19 @@
-// Начните писать стили здесь
+// Global
+@use "./global.scss";
+// Fonts
+@use "./fonts.scss";
+// Header
+@use "./header/main-nav.scss";
+// Footer
+@use "./footer/hashtag.scss";
+@use "./footer/copyright.scss";
+// Index
+@use "./index-blocks/about.scss";
+@use "./index-blocks/advantages-block.scss";
+@use "./index-blocks/search.scss";
+// Catalog
+@use "./catalog-blocks/promo.scss";
+@use "./catalog-blocks/media.scss";
+// Form
+@use "./form-blocks/feedback.scss";
+@use "./form-blocks/form.scss";

@@ -1,0 +1,41 @@
+.form-data__field {
+  background-color: #f2f2f2;
+  border: none;
+  text-transform: none;
+
+  &::placeholder {
+    color: #000000;
+  }
+
+  &--phone::placeholder {
+    opacity: 0.3;
+  }
+
+  &--email::placeholder {
+    opacity: 0.3;
+  }
+}
+
+.form-date__big-text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.form-data__textarea {
+  background-color: #f2f2f2;
+
+  &::placeholder {
+    opacity: 0.3;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+.form-data__hint {
+  font-size: 12px;
+  line-height: 21px;
+  opacity: 0.6;
+  text-transform: uppercase;
+}

@@ -2,13 +2,14 @@
 
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
   <title>Сайт города Седона</title>
 </head>
 
 <body class="page__body">
   <header class="main-header">
     <a href="" class="main-header__logo">
-      <img src="source/img/logo/logo-header.svg" width="185" height="96" alt="Логотип сайта города Седоны.">
+      <img src="img/logo/logo-header.svg" width="185" height="96" alt="Логотип сайта города Седоны.">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
@@ -20,7 +21,7 @@
             <a class="main-nav__link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Фото и видео</a>
+            <a class="main-nav__link" href="catalog.html">Фото и видео</a>
           </li>
         </ul>
         <ul class="main-nav__list list-right">
@@ -41,9 +42,9 @@
 
     <section class="feedback">
       <div class="feedback__background background feedback-background">
-        <img class="feedback-background__image" width="229" height="39" src="source/img/logo/logo-catalog.svg" alt="">
+        <img class="feedback-background__image" width="229" height="39" src="img/logo/logo-catalog.svg" alt="#">
       </div>
-      <h1 class="feedback__title main-title">Оставьте свой отзыв</h1>
+      <h1 class="feedback__title title">Оставьте свой отзыв</h1>
       <p class="feedback__text text text--secondary">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о
         посещенных вами достопримечательностях</p>
     </section>
@@ -52,35 +53,35 @@
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <form class="form__data form-data" action="https://echo.htmlacademy.ru/">
         <fieldset class="form-data__group">
-          <legend class="form-data__title main-title">Представьтесь</legend>
+          <legend class="form-data__title title">Представьтесь</legend>
           <label class="form-data__control">
             <span class="form-data__text text">Имя*:</span>
-            <input class="form-data__field" type="text" placeholder="Петр">
+            <input class="form-data__field title" type="text" placeholder="Пётр">
           </label>
           <label class="form-data__control">
             <span class="form-data__text text">Фамилия*:</span>
-            <input class="form-data__field" type="text" placeholder="Пустота">
+            <input class="form-data__field title" type="text" placeholder="Пустота">
           </label>
           <label class="form-data__control">
             <span class="form-data__text text">Отчество:</span>
-            <input class="form-data__field" type="text" placeholder="Викторович">
+            <input class="form-data__field title" type="text" placeholder="Викторович">
           </label>
         </fieldset>
 
         <fieldset class="form-data__group">
-          <legend class="form-data__title main-title">Контактная информация:</legend>
+          <legend class="form-data__title title">Контактная информация:</legend>
           <label class="form-data__control">
             <span class="form-data__text text">Контактный телефон*:</span>
-            <input class="form-data__field form-data__field--phone" type="tel" placeholder="Введите телефон">
+            <input class="form-data__field title form-data__field--phone" type="tel" placeholder="Введите телефон">
           </label>
           <label class="form-data__control">
             <span class="form-data__text text">Электронная почта*:</span>
-            <input class="form-data__field form-data__field--email" type="tel" placeholder="Введите e-mail">
+            <input class="form-data__field title form-data__field--email" type="tel" placeholder="Введите e-mail">
           </label>
         </fieldset>
 
         <fieldset class="form-data__group">
-          <legend class="form-data__title main-title">Ваше общее впечатление:</legend>
+          <legend class="form-data__title title">Ваше общее впечатление:</legend>
           <label class="form-data__control">
             <input class="form-data__radio" type="radio" checked>
             <span class="form-date__big-text">Скорее положительное</span>
@@ -96,7 +97,7 @@
         </fieldset>
 
         <fieldset class="form-data__group">
-          <legend class="form-data__title main-title">Посещенные достопримечательности:</legend>
+          <legend class="form-data__title title">Посещенные достопримечательности:</legend>
           <label class="form-data__control">
             <input class="form-data__сheck" type="checkbox" checked>
             <span class="form-date__big-text">Мост Дьявола</span>
@@ -116,8 +117,9 @@
         </fieldset>
 
         <fieldset class="form-data__group">
-          <legend class="form-data__title main-title">Опишите свои эмоции:</legend>
-          <textarea name="" id="" cols="30" rows="8" placeholder="Опишите подробно все свои восторги "></textarea>
+          <legend class="form-data__title title">Опишите свои эмоции:</legend>
+          <textarea class="form-data__textarea" name="" id="" cols="30" rows="8"
+            placeholder="Опишите подробно все свои восторги "></textarea>
         </fieldset>
 
         <button class="form-data__button button" type="submit">Оставить отзыв</button>
