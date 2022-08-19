@@ -1,0 +1,17 @@
+.feedback-background {
+  position: relative;
+  background-image: url("../../img/catalog-form-background.jpg");
+  background-repeat: no-repeat;
+  background-color: #9ccae9;
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    content: url("../../img/background-figure.svg");
+  }
+}
+
+.feedback-background__image {
+  display: block;
+  margin: 0 auto;
+}
