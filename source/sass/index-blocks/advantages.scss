@@ -1,0 +1,15 @@
+.advantages__items {
+  margin: 0;
+  padding: 25px 0 52px;
+  list-style-type: none;
+}
+
+.advantages__item {
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+
+.advantages__title {
+  margin-bottom: 16px;
+}

@@ -2,13 +2,14 @@
 
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
   <title>Сайт города Седона</title>
 </head>
 
 <body class="page__body">
   <header class="main-header">
     <a href="" class="main-header__logo">
-      <img src="source/img/logo/logo-header.svg" width="185" height="96" alt="Логотип сайта города Седоны.">
+      <img src="img/logo/logo-header.svg" width="185" height="96" alt="Логотип сайта города Седоны.">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
@@ -16,18 +17,18 @@
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list list-left">
-          <li class="main-nav__item main-nav__item--current">
+          <li class="main-nav__item main-nav__item--current list-left__item">
             <a class="main-nav__link" href="#">Главная</a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item list-left__item">
             <a class="main-nav__link" href="catalog.html">Фото и видео</a>
           </li>
         </ul>
         <ul class="main-nav__list list-right">
-          <li class="main-nav__item">
+          <li class="main-nav__item list-right__item">
             <a class="main-nav__link" href="form.html">Форма отзыва</a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item list-right__item">
             <a class="main-nav__link" href="#">HtmlAcademy</a>
           </li>
         </ul>
@@ -41,7 +42,7 @@
     <section class="about">
       <h1 class="visually-hidden">Сайт города Седона</h1>
       <div class="about__background background about-background">
-        <img class="about-background__image" width="282" height="214" src="source/img/index-text.svg.svg" alt="">
+        <img class="about-background__image" width="282" height="214" src="img/index-text.svg.svg" alt="">
       </div>
       <p class="about__slogan title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
       <p class="about__text text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
@@ -54,13 +55,14 @@
       <h2 class="visually-hidden">Преимущества Седоны</h2>
 
       <div class="advantages__block advantages-block">
-        <div class="advantages-block__description">
+        <div class="advantages-block__description advantages-block__description--primary">
           <h3 class="advantages-block__title title title--primary">Настоящий городок</h3>
           <span class=" advantages-block__number number number--primary">– №1 –</span>
-          <p class="advantages-block__text text text--primary">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ
-            СВОЯ ЖИЗНЬ</p>
+          <p class="advantages-block__text text text--primary">Седона не аттрацион для туристов, там&nbsp;течет своя
+            жизнь
+          </p>
         </div>
-        <img class="advantages-block__image" width="320" height="260" src="" alt="Город Седона.">
+        <img class="advantages-block__image" width="320" height="260" src="img/advantages1.jpg" alt="Город Седона.">
       </div>
 
       <ul class="advantages__items">
@@ -79,27 +81,27 @@
       </ul>
 
       <div class="advantages__block advantages-block">
-        <div class="advantages-block__description">
+        <div class="advantages-block__description advantages-block__description--primary">
           <h3 class="advantages-block__title title title--primary">Там есть мост дьявола</h3>
           <span class="advantages-block__number number number--primary">– №2 –</span>
           <p class="advantages-block__text text text--primary">Да, по нему можно пройти! Если вы осмелитесь,
             конечно</p>
         </div>
-        <img class="advantages-block__image" width="320" height="260" src="" alt="Мост дьявола.">
+        <img class="advantages-block__image" width="320" height="260" src="img/advantages2.jpg" alt="Мост дьявола.">
       </div>
 
       <div class="advantages__block advantages-block advantages-block--secondary">
-        <div class="advantages-block__description">
+        <div class="advantages-block__description advantages-block__description--secondary">
           <h3 class="advantages-block__title title title--secondary">Небольшая площадь</h3>
           <span class="advantages-block__number number number--secondary">– №3 –</span>
           <p class="advantages-block__text text text--secondary">Все интересные места находятся очень близко</p>
         </div>
-        <div class="advantages-block__description">
+        <div class="advantages-block__description advantages-block__description--secondary">
           <h3 class="advantages-block__title title title--secondary">Красивая дорога</h3>
           <span class="advantages-block__number number number--secondary">– №4 –</span>
           <p class="advantages-block__text text text--secondary">Ехать в Седону из Лас-Вегаса совсем не скучно</p>
         </div>
-        <div class="advantages-block__description">
+        <div class="advantages-block__description advantages-block__description--secondary">
           <h3 class="advantages-block__title title title--secondary">Мало туристов</h3>
           <span class="advantages-block__number number number--secondary">– №5 –</span>
           <p class="advantages-block__text text text--secondary">Большинство едет в гранд каньон и толпится там</p>
@@ -111,8 +113,9 @@
 
     <section class="search">
       <h2 class="visually-hidden">Поиск гостиниц в Седоне</h2>
-      <span class="search__title main-title">Заинтересовались?</span>
-      <p class="search__text text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
+      <p class="search__title title main-title">Заинтересовались?</p>
+      <p class="search__text text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие
+        предложения гостиниц в
         Cедоне</p>
       <a class="search__button button" href="catalog.html">Найти гостиницу</a>
     </section>
@@ -133,13 +136,30 @@
     <div class="main-footer__social social">
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link social__link--vk" href="">Вконтакте</a>
+          <a class="social__link social__link--vk" href="">
+            <svg width="24" height="14" viewBox="0 0 24 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M23.45 0.948C23.616 0.402 23.45 0 22.655 0H20.03C19.362 0 19.054 0.347 18.887 0.73C18.887 0.73 17.552 3.926 15.661 6.002C15.049 6.604 14.771 6.795 14.437 6.795C14.27 6.795 14.019 6.604 14.019 6.057V0.948C14.019 0.292 13.835 0 13.279 0H9.151C8.734 0 8.483 0.304 8.483 0.593C8.483 1.214 9.429 1.358 9.526 3.106V6.904C9.526 7.737 9.373 7.888 9.039 7.888C8.149 7.888 5.984 4.677 4.699 1.003C4.45 0.288 4.198 0 3.527 0H0.9C0.15 0 0 0.347 0 0.73C0 1.412 0.89 4.8 4.145 9.281C6.315 12.341 9.37 14 12.153 14C13.822 14 14.028 13.632 14.028 12.997V10.684C14.028 9.947 14.186 9.8 14.715 9.8C15.105 9.8 15.772 9.992 17.33 11.467C19.11 13.216 19.403 14 20.405 14H23.03C23.78 14 24.156 13.632 23.94 12.904C23.702 12.18 22.852 11.129 21.725 9.882C21.113 9.172 20.195 8.407 19.916 8.024C19.527 7.533 19.638 7.314 19.916 6.877C19.916 6.877 23.116 2.451 23.449 0.948H23.45Z" />
+            </svg>
+
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--telegram" href="">Телеграм</a>
+          <a class="social__link social__link--telegram" href="">
+            <svg width="22" height="18" viewBox="0 0 22 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M21.4393 1.62225L18.2705 16.566C18.0313 17.6205 17.408 17.883 16.5223 17.3865L11.6938 13.8285L9.36425 16.0695C9.10626 16.3275 8.891 16.5428 8.39375 16.5428L8.741 11.6258L17.6893 3.54C18.0785 3.1935 17.6045 3.00075 17.0848 3.348L6.02225 10.314L1.25976 8.823C0.224006 8.49975 0.205256 7.78725 1.47576 7.29L20.1035 0.113253C20.966 -0.209997 21.7205 0.305253 21.4393 1.623V1.62225Z" />
+            </svg>
+
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--youtube" href="">Ютуб</a>
+          <a class="social__link social__link--youtube" href="">
+            <svg width="20" height="14" viewBox="0 0 20 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M17.1813 0H2.81331C1.30618 0 0 1.3 0 2.8V11.1C0 12.7 1.30618 14 2.81331 14H17.1813C18.7889 14 19.9946 12.7 19.9946 11.2V2.8C20.095 1.3 18.7889 0 17.1813 0ZM7.03326 10.4V3.6L13.8656 7L7.03326 10.4Z" />
+            </svg>
+          </a>
         </li>
       </ul>
     </div>
