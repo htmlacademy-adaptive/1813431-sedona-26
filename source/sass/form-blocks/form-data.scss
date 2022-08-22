@@ -27,16 +27,12 @@
 }
 
 .form-data__field {
-  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
   display: block;
   padding: 16px;
   background-color: #f2f2f2;
   border: none;
   text-transform: none;
-
-  // &:not(:last-child) {
-  //   margin-bottom: 16px;
-  // }
 
   &::placeholder {
     color: #000000;
@@ -58,7 +54,7 @@
 }
 
 .form-data__textarea {
-  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
