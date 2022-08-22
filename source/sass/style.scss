@@ -4,6 +4,8 @@
 @use "./fonts.scss";
 // Header
 @use "./header/main-nav.scss";
+@use "./header/list-left.scss";
+@use "./header/list-right.scss";
 // Footer
 @use "./footer/main-footer.scss";
 @use "./footer/hashtag.scss";

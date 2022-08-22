@@ -13,24 +13,6 @@
   border-bottom: 1px solid rgba(1, 1, 1, 0.2);
 }
 
-.list-left__item {
-
-  &:not(:first-child) {
-    box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.2);
-  }
-}
-
-.list-right__item {
-  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.2);
-
-  &:last-child {
-    border-bottom: none;
-    box-shadow: inset 0px -22px 5px -20px rgba(0, 0, 0, 0.2);
-  }
-
-
-}
-
 .main-nav__link {
   display: block;
   font-weight: 700;
