@@ -7,7 +7,7 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header">
+  <header class="main-header main-wrapper">
     <a href="" class="main-header__logo">
       <img src="img/logo/logo-header.svg" width="185" height="96" alt="Логотип сайта города Седоны.">
     </a>
@@ -17,18 +17,18 @@
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list list-left">
-          <li class="main-nav__item main-nav__item--current">
+          <li class="main-nav__item list-left__item">
             <a class="main-nav__link" href="index.html">Главная</a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item list-left__item">
             <a class="main-nav__link" href="catalog.html">Фото и видео</a>
           </li>
         </ul>
         <ul class="main-nav__list list-right">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Форма отзыва</a>
+          <li class="main-nav__item list-right__item">
+            <a class="main-nav__link main-nav__link--current" href="#">Форма отзыва</a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item list-right__item">
             <a class="main-nav__link" href="#">HtmlAcademy</a>
           </li>
         </ul>
@@ -38,15 +38,17 @@
 
   <!-- Main -->
 
-  <main class="main-inner">
+  <main class="main-inner main-wrapper">
 
     <section class="feedback">
       <div class="feedback__background background feedback-background">
         <img class="feedback-background__image" width="229" height="39" src="img/logo/logo-catalog.svg" alt="#">
       </div>
-      <h1 class="feedback__title title">Оставьте свой отзыв</h1>
-      <p class="feedback__text text text--secondary">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о
-        посещенных вами достопримечательностях</p>
+      <div class="feedback__text-wrapper">
+        <h1 class="feedback__title title">Оставьте свой отзыв</h1>
+        <p class="feedback__text text text--secondary">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также
+          о посещенных вами достопримечательностях</p>
+      </div>
     </section>
 
     <section class="form">
@@ -128,13 +130,15 @@
         <div class="form-data__group-wrapper">
           <fieldset class="form-data__group">
             <legend class="form-data__title title">Опишите свои эмоции:</legend>
-            <textarea class="form-data__textarea" name="" id="" cols="30" rows="8"
+            <textarea class="form-data__textarea" name="" id=""
               placeholder="Опишите подробно все свои восторги "></textarea>
           </fieldset>
         </div>
 
-        <button class="form-data__button button" type="submit">Оставить отзыв</button>
-        <span class="form-data__hint">* — обязательные поля</span>
+        <div class="form-data__button-wrapper">
+          <button class="form-data__button button" type="submit">Оставить отзыв</button>
+          <span class="form-data__hint">* — обязательные поля</span>
+        </div>
       </form>
     </section>
 
@@ -142,7 +146,7 @@
 
   <!-- Подвал -->
 
-  <footer class="main-footer">
+  <footer class="main-footer main-wrapper">
     <div class="main-footer__hashtag hashtag">
       <span class="hashtag__text">#visitSEDONA</span>
     </div>

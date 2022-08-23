@@ -1,8 +1,11 @@
+// Variables
+@use "./variables.scss";
 // Global
 @use "./global.scss";
 // Fonts
 @use "./fonts.scss";
 // Header
+@use "./header/main-header.scss";
 @use "./header/main-nav.scss";
 @use "./header/list-left.scss";
 @use "./header/list-right.scss";

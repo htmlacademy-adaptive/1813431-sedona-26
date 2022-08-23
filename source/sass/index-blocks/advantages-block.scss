@@ -1,9 +1,13 @@
+@use "./variables.scss";
+
 .advantages-block {
   background-color: #eeeeee;
 }
 
 .advantages-block__description {
   padding: 33px 0 40px;
+  // padding-left: 20px;
+  // padding-right: 20px;
   text-align: center;
 }
 
@@ -14,7 +18,7 @@
 
 .advantages-block__description--secondary {
   margin: 0 18px;
-  padding: 26px 0 24px;
+  padding: 26px 18px 24px;
 
   &:not(:last-child) {
     border-bottom: 1px solid #d6d6d6;
@@ -28,4 +32,43 @@
 .advantages-block__number {
   display: block;
   margin-bottom: 17px;
+}
+
+@media (min-width: variables.$tablet-width) {
+
+  .advantages-block__description {
+    width: 256px;
+    padding: 40px 30px 44px;
+  }
+
+  .advantages-block__description--secondary {
+
+    &:not(:last-child) {
+      border-bottom: none;
+    }
+  }
+
+  .advantages-block__image {
+    width: 512px;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+
+  .advantages-block__description {
+    width: 400px;
+    padding: 47px 52px 56px;
+  }
+
+  .advantages-block__title {
+    margin-bottom: 14px;
+  }
+
+  .advantages-block__number {
+    margin-bottom: 26px;
+  }
+
+  .advantages-block__image {
+    width: 800px;
+  }
 }

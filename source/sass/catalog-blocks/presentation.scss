@@ -1,5 +1,10 @@
 .presentation {
   padding-top: 17px;
+  text-align: center;
+}
+
+.presentation__text-wrapper {
+  padding: 0 25px;
 }
 
 .presentation__title {
@@ -8,4 +13,8 @@
 
 .presentation__text {
   margin-bottom: 38px;
+}
+
+.presentation__button {
+  display: block;
 }

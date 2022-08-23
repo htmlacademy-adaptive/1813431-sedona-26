@@ -7,7 +7,7 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header">
+  <header class="main-header main-wrapper">
     <a href="" class="main-header__logo">
       <img src="img/logo/logo-header.svg" width="185" height="96" alt="Логотип сайта города Седоны.">
     </a>
@@ -17,8 +17,8 @@
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list list-left">
-          <li class="main-nav__item main-nav__item--current list-left__item">
-            <a class="main-nav__link" href="#">Главная</a>
+          <li class="main-nav__item list-left__item">
+            <a class="main-nav__link main-nav__link--current" href="#">Главная</a>
           </li>
           <li class="main-nav__item list-left__item">
             <a class="main-nav__link" href="catalog.html">Фото и видео</a>
@@ -38,14 +38,16 @@
 
   <!-- Main -->
 
-  <main class="main-container">
+  <main class="main-container main-wrapper">
     <section class="about">
       <h1 class="visually-hidden">Сайт города Седона</h1>
       <div class="about__background background about-background">
         <img class="about-background__image" width="282" height="214" src="img/index-text.svg.svg" alt="">
       </div>
-      <p class="about__slogan title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-      <p class="about__text text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      <div class="about__text-wrapper">
+        <p class="about__slogan title">Седона — небольшой<br> городок в Аризоне, заслуживающий большего!</p>
+        <p class="about__text text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      </div>
     </section>
 
     <!-- Преимущества -->
@@ -81,13 +83,13 @@
       </ul>
 
       <div class="advantages__block advantages-block">
+        <img class="advantages-block__image" width="320" height="260" src="img/advantages2.jpg" alt="Мост дьявола.">
         <div class="advantages-block__description advantages-block__description--primary">
           <h3 class="advantages-block__title title title--primary">Там есть мост дьявола</h3>
           <span class="advantages-block__number number number--primary">– №2 –</span>
           <p class="advantages-block__text text text--primary">Да, по нему можно пройти! Если вы осмелитесь,
             конечно</p>
         </div>
-        <img class="advantages-block__image" width="320" height="260" src="img/advantages2.jpg" alt="Мост дьявола.">
       </div>
 
       <div class="advantages__block advantages-block advantages-block--secondary">
@@ -124,12 +126,14 @@
 
     <div class="location">
       <h2 class="visually-hidden">Местонахождение города Седона</h2>
+      <img class="location__image" src="./img/map-mobile.jpg.jpg" width="100%" height="350"
+        alt="Местоположение города Седона на карте">
     </div>
   </main>
 
   <!-- Подвал -->
 
-  <footer class="main-footer">
+  <footer class="main-footer main-wrapper">
     <div class="main-footer__hashtag hashtag">
       <span class="hashtag__text">#visitSEDONA</span>
     </div>

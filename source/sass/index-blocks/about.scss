@@ -1,12 +1,38 @@
+@use "./variables.scss";
+
 .about {
   padding-bottom: 53px;
+  text-align: center;
 }
 
 .about__background {
   width: 320px;
+  margin-bottom: 32px;
   padding: 90px 0 85px;
+}
+
+.about__text-wrapper {
+  padding-left: 18px;
+  padding-right: 20px;
 }
 
 .about__slogan {
   margin-bottom: 35px;
+}
+
+
+@media (min-width: variables.$desktop-width) {
+
+  .about {
+    padding-bottom: 44px;
+  }
+
+  .about__background {
+    margin-bottom: 59px;
+  }
+
+  .about__text-wrapper {
+    padding-left: 320px;
+    padding-right: 320px;
+  }
 }

@@ -1,3 +1,5 @@
+@use "./variables.scss";
+
 .main-nav__wrapper {
   text-align: center;
 }
@@ -22,4 +24,42 @@
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+
+@media (min-width: variables.$tablet-width) {
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-nav__list {
+    display: flex;
+  }
+
+  .main-nav__item {
+    background-color: #ffffff;
+    border: none;
+
+    &--current {
+      color: #766357;
+    }
+  }
+
+  .main-nav__link {
+    font-size: 14px;
+    line-height: 21px;
+    padding: 18px 0 17px;
+    color: #000000;
+
+    &--current {
+      color: variables.$currentColor;
+    }
+  }
+
 }

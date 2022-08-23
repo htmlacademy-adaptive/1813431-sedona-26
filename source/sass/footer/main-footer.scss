@@ -1,5 +1,8 @@
+@use "./variables.scss";
+
 .main-footer {
-  padding: 28px 0 23px;
+  padding: 28px 18px 23px;
+  text-align: center;
 }
 
 .main-footer__hashtag {
@@ -8,4 +11,14 @@
 
 .main-footer__social {
   margin-bottom: 40px;
+}
+
+@media (min-width: variables.$tablet-width) {
+
+  .main-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 36px 60px;
+  }
 }
