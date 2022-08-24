@@ -42,7 +42,6 @@
 }
 
 @media (min-width: variables.$tablet-width) {
-
   .media__list {
     display: grid;
     grid-template-columns: 324px 324px;
@@ -79,16 +78,14 @@
 }
 
 @media (min-width: variables.$desktop-width) {
-
   .media__list {
     grid-template-columns: repeat(3, 400px);
     padding: 0;
   }
 
   .media__item {
-
     &:first-child {
-      grid-column: 1 / 4 ;
+      grid-column: 1 / 4;
     }
   }
 

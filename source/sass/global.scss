@@ -85,14 +85,12 @@ button {
 }
 
 @media (min-width: variables.$tablet-width) {
-
   .main-wrapper {
-      width: 768px;
-    }
+    width: 768px;
+  }
 }
 
 @media (min-width: variables.$desktop-width) {
-
   .main-wrapper {
     width: 1200px;
   }

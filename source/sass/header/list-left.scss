@@ -7,14 +7,12 @@
 }
 
 @media (min-width: variables.$tablet-width) {
-
   .list-left {
     padding-left: 49px;
-    background-color: #fff;
+    background-color: #ffffff;
   }
 
   .list-left__item {
-
     &:first-child {
       margin-right: 75px;
     }
@@ -22,13 +20,11 @@
 }
 
 @media (min-width: variables.$desktop-width) {
-
   .list-left {
     padding-left: 91px;
   }
 
   .list-left__item {
-
     &:first-child {
       margin-right: 162px;
     }

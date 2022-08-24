@@ -28,7 +28,6 @@
 
 
 @media (min-width: variables.$tablet-width) {
-
   .main-nav__toggle {
     display: none;
   }
@@ -61,5 +60,4 @@
       color: variables.$currentColor;
     }
   }
-
 }

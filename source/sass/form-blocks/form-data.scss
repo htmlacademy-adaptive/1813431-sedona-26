@@ -116,13 +116,9 @@
 }
 
 @media (min-width: variables.$tablet-width) {
-
   .form-data__contacts {
-    // display: grid;
-    // grid-template-columns: repeat(2, 323px);
     display: flex;
     justify-content: space-between;
-    // margin-bottom: 48px;
   }
 
   .form-data__group-wrapper {
@@ -134,15 +130,6 @@
       padding-right: 43px;
       border-right: 1px solid #dbdbdb;
     }
-  }
-
-  .form-data__field {
-
-    // &--email,
-    // &--phone {
-    //   width: 222px;
-    //   align-self: end;
-    // }
   }
 
   .form-data__title {
@@ -186,9 +173,7 @@
 }
 
 @media (min-width: variables.$desktop-width) {
-
   .form-data__group-wrapper {
-
     &:first-child {
       padding-right: 63px;
       border-right: 1px solid #dbdbdb;
