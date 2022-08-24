@@ -55,83 +55,98 @@
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <form class="form__data form-data" action="https://echo.htmlacademy.ru/">
 
-        <div class="form-data__group-wrapper">
-          <fieldset class="form-data__group">
-            <legend class="form-data__title title">Представьтесь</legend>
-            <label class="form-data__control">
-              <span class="form-data__text text">Имя*:</span>
-              <input class="form-data__field title" type="text" placeholder="Пётр">
-            </label>
-            <label class="form-data__control">
-              <span class="form-data__text text">Фамилия*:</span>
-              <input class="form-data__field title" type="text" placeholder="Пустота">
-            </label>
-            <label class="form-data__control">
-              <span class="form-data__text text">Отчество:</span>
-              <input class="form-data__field title" type="text" placeholder="Викторович">
-            </label>
-          </fieldset>
-        </div>
+        <div class="form-data__contacts">
+          <div class="form-data__group-wrapper">
+            <fieldset class="form-data__group">
+              <legend class="form-data__title title">Представьтесь</legend>
+              <label class="form-data__control">
+                <span class="form-data__text text">Имя*:</span>
+                <input class="form-data__field title" type="text" placeholder="Пётр">
+              </label>
+              <label class="form-data__control">
+                <span class="form-data__text text">Фамилия*:</span>
+                <input class="form-data__field title" type="text" placeholder="Пустота">
+              </label>
+              <label class="form-data__control">
+                <span class="form-data__text text">Отчество:</span>
+                <input class="form-data__field title" type="text" placeholder="Викторович">
+              </label>
+            </fieldset>
+          </div>
 
-        <div class="form-data__group-wrapper">
-          <fieldset class="form-data__group">
-            <legend class="form-data__title title">Контактная информация:</legend>
-            <label class="form-data__control">
-              <span class="form-data__text text">Контактный телефон*:</span>
-              <input class="form-data__field title form-data__field--phone" type="tel" placeholder="Введите телефон">
-            </label>
-            <label class="form-data__control">
-              <span class="form-data__text text">Электронная почта*:</span>
-              <input class="form-data__field title form-data__field--email" type="tel" placeholder="Введите e-mail">
-            </label>
-          </fieldset>
+          <div class="form-data__group-wrapper">
+            <fieldset class="form-data__group">
+              <legend class="form-data__title title form-data__title--contacts">Контактная информация:</legend>
+              <label class="form-data__control">
+                <span class="form-data__text text">Контактный телефон*:</span>
+                <div class="form-data__contacts-wrapper">
+                  <input class="form-data__field title form-data__field--phone" type="tel"
+                    placeholder="Введите телефон">
+                  <div class="form-data__phone-logo"></div>
+                </div>
+              </label>
+              <label class="form-data__control">
+                <span class="form-data__text text">Электронная почта*:</span>
+                <div class="form-data__contacts-wrapper">
+                  <input class="form-data__field title form-data__field--email" type="tel" placeholder="Введите e-mail">
+                  <div class="form-data__email-logo"></div>
+                </div>
+              </label>
+            </fieldset>
+          </div>
         </div>
 
         <div class="form-data__group-wrapper">
           <fieldset class="form-data__group">
             <legend class="form-data__title title">Ваше общее впечатление:</legend>
-            <label class="form-data__control">
-              <input class="form-data__radio" type="radio" checked>
-              <span class="form-data__big-text">Скорее положительное</span>
-            </label>
-            <label class="form-data__control">
-              <input class="form-data__radio" type="radio">
-              <span class="form-data__big-text">Скорее отрицательное</span>
-            </label>
-            <label class="form-data__control">
-              <input class="form-data__radio" type="radio">
-              <span class="form-data__big-text">Затрудняюсь ответить</span>
-            </label>
+            <div class="form-data__radio-wrapper">
+              <label class="form-data__control">
+                <input class="form-data__radio" type="radio" checked>
+                <span class="form-data__big-text">Скорее положительное</span>
+              </label>
+              <label class="form-data__control">
+                <input class="form-data__radio" type="radio">
+                <span class="form-data__big-text">Скорее отрицательное</span>
+              </label>
+              <label class="form-data__control">
+                <input class="form-data__radio" type="radio">
+                <span class="form-data__big-text">Затрудняюсь ответить</span>
+              </label>
+            </div>
           </fieldset>
         </div>
 
         <div class="form-data__group-wrapper">
           <fieldset class="form-data__group">
             <legend class="form-data__title title">Посещенные достопримечательности:</legend>
-            <label class="form-data__control">
-              <input class="form-data__сheck" type="checkbox" checked>
-              <span class="form-data__big-text">Мост Дьявола</span>
-            </label>
-            <label class="form-data__control">
-              <input class="form-data__сheck" type="checkbox" checked>
-              <span class="form-data__big-text">Гора-Колокол</span>
-            </label>
-            <label class="form-data__control">
-              <input class="form-data__сheck" type="checkbox" checked>
-              <span class="form-data__big-text">Слайд-парк</span>
-            </label>
-            <label class="form-data__control">
-              <input class="form-data__сheck" type="checkbox">
-              <span class="form-data__big-text">Красные скалы</span>
-            </label>
+            <div class="form-data__check-wrapper">
+              <label class="form-data__control">
+                <input class="form-data__сheck" type="checkbox" checked>
+                <span class="form-data__big-text">Мост Дьявола</span>
+              </label>
+              <label class="form-data__control">
+                <input class="form-data__сheck" type="checkbox" checked>
+                <span class="form-data__big-text">Гора-Колокол</span>
+              </label>
+              <label class="form-data__control">
+                <input class="form-data__сheck" type="checkbox" checked>
+                <span class="form-data__big-text">Слайд-парк</span>
+              </label>
+              <label class="form-data__control">
+                <input class="form-data__сheck" type="checkbox">
+                <span class="form-data__big-text">Красные скалы</span>
+              </label>
+            </div>
           </fieldset>
         </div>
 
         <div class="form-data__group-wrapper">
           <fieldset class="form-data__group">
             <legend class="form-data__title title">Опишите свои эмоции:</legend>
-            <textarea class="form-data__textarea" name="" id=""
-              placeholder="Опишите подробно все свои восторги "></textarea>
+            <div class="form-data__textarea-wrapper">
+              <textarea class="form-data__textarea" name="" id=""
+                placeholder="Опишите подробно все свои восторги "></textarea>
+            </div>
           </fieldset>
         </div>
 
