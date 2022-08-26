@@ -49,19 +49,19 @@
   }
 
   .modal__content {
-      &--error {
-        padding: 50px 47px 25px;
-      }
-
-      &--success {
-        padding: 53px 98px 30px;
-      }
+    &--error {
+      padding: 50px 47px 25px;
     }
 
-    .modal__title {
-      font-size: 30px;
-      line-height: 40px;
+    &--success {
+      padding: 53px 98px 30px;
     }
+  }
+
+  .modal__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
 
   .modal__button-wrapper {
     &--error {
@@ -77,12 +77,12 @@
 
 @media (min-width: variables.$desktop-width) {
   .modal__content {
-      &--error {
-        padding: 48px 47px 25px;
-      }
-
-      &--success {
-        padding: 51px 98px 28px;
-      }
+    &--error {
+      padding: 48px 47px 25px;
     }
+
+    &--success {
+      padding: 51px 98px 28px;
+    }
+  }
 }
