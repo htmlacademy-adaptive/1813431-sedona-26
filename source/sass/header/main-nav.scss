@@ -1,7 +1,83 @@
 @use "./variables.scss";
 
-.main-nav__wrapper {
+.main-nav {
+  position: relative;
+  min-height: 56px;
+  z-index: 1;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  width: 23px;
+  height: 22px;
+  cursor: pointer;
+  background: none;
+  z-index: 1;
+
+  &:hover {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 23px;
+  height: 4px;
+  background-color: #81b3d2;
+  box-shadow:
+    0 9px 0 0 #81b3d2,
+    0 18px 0 0 #81b3d2;
+  content: "";
+}
+
+.main-nav--opened .main-nav__toggle {
+  &::before,
+  &::after {
+    position: absolute;
+    top: 11px;
+    left: 0;
+    width: 28px;
+    height: 4px;
+    background-color: #ffffff;
+    content: "";
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.main-nav--opened .main-nav__wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
   text-align: center;
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--nojs .main-nav__wrapper {
+  position: static;
+  min-height: 0;
+}
+
+.main-nav--nojs .main-nav__item {
+  display: block;
 }
 
 .main-nav__list {
@@ -20,12 +96,21 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  padding: 17px 0 12px;
+  padding: 17px 50px 12px;
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
 }
 
+@media (max-width: variables.$mobile-width-only) {
+  .main-nav--closed .main-nav__item {
+    display: none;
+  }
+
+  .main-nav--closed .main-nav__toggle {
+    display: block;
+  }
+}
 
 @media (min-width: variables.$tablet-width) {
   .main-nav__toggle {
