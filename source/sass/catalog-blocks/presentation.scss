@@ -1,11 +1,46 @@
+@use "./variables.scss";
+
 .presentation {
   padding-top: 17px;
+  text-align: center;
+}
+
+.presentation__text-wrapper {
+  margin-bottom: 38px;
+  padding: 0 25px;
 }
 
 .presentation__title {
   margin-bottom: 33px;
 }
 
-.presentation__text {
-  margin-bottom: 38px;
+.presentation__button {
+  display: block;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .presentation {
+    padding-top: 58px;
+  }
+
+  .presentation__text-wrapper {
+    margin-bottom: 70px;
+    padding: 0 160px;
+  }
+
+  .presentation__title {
+    font-size: 30px;
+    line-height: 26px;
+  }
+
+  .presentation__video {
+    width: 100%;
+    padding: 0 60px;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .presentation {
+    padding-top: 62px;
+  }
 }

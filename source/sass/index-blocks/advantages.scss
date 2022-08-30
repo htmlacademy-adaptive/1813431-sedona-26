@@ -1,6 +1,8 @@
+@use "./variables.scss";
+
 .advantages__items {
   margin: 0;
-  padding: 25px 0 52px;
+  padding: 25px 18px 52px 65px;
   list-style-type: none;
 }
 
@@ -12,4 +14,23 @@
 
 .advantages__title {
   margin-bottom: 16px;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .advantages__block {
+    display: flex;
+  }
+
+  .advantages__items {
+    display: flex;
+    padding: 158px 0 59px;
+    list-style-type: none;
+    text-align: center;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .advantages__items {
+    display: flex;
+  }
 }

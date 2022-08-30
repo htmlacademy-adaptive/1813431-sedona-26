@@ -1,5 +1,8 @@
+@use "./variables.scss";
+
 .search {
-  padding: 38px 0 62px;
+  padding: 38px 18px 49px;
+  text-align: center;
 }
 
 .search__title {
@@ -8,5 +11,27 @@
 
 .search__text {
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 32px;
+}
+
+.search__button {
+  display: block;
+  // padding: 15px 15px 17px;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .search {
+    padding: 61px 155px 58px;
+  }
+
+  .search__title {
+    font-size: 30px;
+    line-height: 26px;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .search {
+    padding: 61px 371px 66px;
+  }
 }
