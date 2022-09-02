@@ -1,4 +1,33 @@
+.copyright__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+
+  &:hover .copyright__image {
+    fill: #81b3d2;
+  }
+
+  &:hover .copyright__text {
+    color: #81b3d2;
+  }
+
+  &:active .copyright__image {
+    fill: #b3b3b3;
+  }
+
+  &:active .copyright__text {
+    color: #b3b3b3;
+  }
+}
+
 .copyright__text {
+  line-height: 45px;
+  margin-right: 13px;
   color: #000000;
   text-transform: uppercase;
+}
+
+.copyright__image {
+  fill: #000000;
 }

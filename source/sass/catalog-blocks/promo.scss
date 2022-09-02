@@ -15,6 +15,10 @@
   text-align: center;
 }
 
+br {
+  display: none;
+}
+
 .promo__title {
   margin-bottom: 34px;
 }
@@ -41,7 +45,7 @@
   }
 
   .promo__text-wrapper {
-    padding: 0 140px;
+    padding: 0 170px;
   }
 
   .promo__title {
