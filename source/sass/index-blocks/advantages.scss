@@ -54,6 +54,12 @@
   margin-bottom: 16px;
 }
 
+@media (max-width: variables.$mobile-width-only) {
+  .advantages__text br {
+    display: none;
+  }
+}
+
 @media (min-width: variables.$tablet-width) {
   .advantages__block {
     display: flex;
@@ -67,8 +73,9 @@
   }
 
   .advantages__item {
+    width: 256px;
     margin: 0;
-    padding: 0 35px;
+    padding: 0 28px;
 
     &--housing::before {
       top: -100px;
@@ -115,6 +122,7 @@
   }
 
   .advantages__item {
+    width: 400px;
     padding: 0 65px;
 
     &--housing::before {

@@ -15,12 +15,14 @@
   text-align: center;
 }
 
-br {
-  display: none;
-}
-
 .promo__title {
   margin-bottom: 34px;
+}
+
+@media (max-width: variables.$mobile-width-only) {
+  .promo__text br {
+    display: none;
+  }
 }
 
 @media (min-width: variables.$tablet-width) {
