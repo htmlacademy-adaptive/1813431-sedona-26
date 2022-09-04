@@ -14,8 +14,22 @@
   margin-bottom: 33px;
 }
 
+.presentation__video-wrapper {
+  position: relative;
+}
+
 .presentation__button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 48px;
+  height: 54px;
   display: block;
+  background: transparent;
+  background-image: url("../../img/icon/icon-play-button.svg");
+  background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 @media (min-width: variables.$tablet-width) {
@@ -41,10 +55,14 @@
 
 @media (min-width: variables.$desktop-width) {
   .presentation {
-    padding-top: 62px;
+    padding: 62px 200px 0;
   }
 
   .presentation__text-wrapper {
-    padding: 0 378px;
+    padding: 0 178px;
+  }
+
+  .presentation__video {
+    padding: 0;
   }
 }
