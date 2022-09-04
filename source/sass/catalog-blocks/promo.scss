@@ -19,6 +19,12 @@
   margin-bottom: 34px;
 }
 
+@media (max-width: variables.$mobile-width-only) {
+  .promo__text br {
+    display: none;
+  }
+}
+
 @media (min-width: variables.$tablet-width) {
   .promo {
     padding-bottom: 67px;
@@ -41,7 +47,7 @@
   }
 
   .promo__text-wrapper {
-    padding: 0 140px;
+    padding: 0 170px;
   }
 
   .promo__title {

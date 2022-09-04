@@ -19,6 +19,12 @@
   // padding: 15px 15px 17px;
 }
 
+@media (max-width: variables.$mobile-width-only) {
+  .search__text br {
+    display: none;
+  }
+}
+
 @media (min-width: variables.$tablet-width) {
   .search {
     padding: 61px 155px 58px;
