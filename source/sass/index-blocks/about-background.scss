@@ -9,8 +9,8 @@
   &::after {
     position: absolute;
     left: 0;
-    bottom: -1px;
-    content: url("../../img/background-figure.svg");
+    bottom: 0;
+    content: url("../../img/bg-figure/bg-figure-mobile.svg");
   }
 }
 
@@ -29,15 +29,13 @@
       position: absolute;
       left: 0;
       bottom: -1px;
-      width: 768px;
-      content: url("../../img/background-figure-big.svg");
+      content: url("../../img/bg-figure/bg-figure-tablet.svg");
     }
   }
 }
 
 @media (min-width: variables.$desktop-width) {
   .about-background {
-    // width: 768px;
     background-size: 100% auto;
 
     &::after {
@@ -45,8 +43,7 @@
       left: 0;
       bottom: -1px;
       transform: translate(0, 0);
-      width: 1200px;
-      content: url("../../img/background-figure-big.svg");
+      content: url("../../img/bg-figure/bg-figure-desktop.svg");
     }
   }
 }
