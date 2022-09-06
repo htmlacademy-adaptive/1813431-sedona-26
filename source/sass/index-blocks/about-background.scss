@@ -2,7 +2,7 @@
 
 .about-background {
   position: relative;
-  background-image: url("../../img/index-background.jpg");
+  background-image: url("../../img/backgrounds/bg-index-mobile.jpg");
   background-color: #9ccae9;
   background-repeat: no-repeat;
 
@@ -36,7 +36,6 @@
 
 @media (min-width: variables.$desktop-width) {
   .about-background {
-    background-size: 100% auto;
 
     &::after {
       position: absolute;
