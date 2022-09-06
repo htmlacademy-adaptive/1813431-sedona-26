@@ -289,31 +289,30 @@
 
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-.line {
-  position: relative;
+// .line {
+//   position: relative;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    height: 2px;
-    width: 100%;
-    background-color: red;
-    z-index: 1;
-  }
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     top: 50%;
+//     height: 2px;
+//     width: 100%;
+//     background-color: red;
+//     z-index: -1;
+//   }
+// }
 
-  .line-container {
-    max-width: 1220px;
-    margin: 0 auto;
-  }
+//   .line-container {
+//     max-width: 1220px;
+//     margin: 0 auto;
+//   }
 
-  .line__title {
-    padding: 0 40px;
-    background-color: #fff;
-    display: inline-block;
-    z-index: 6;
-  }
-}
+//   .line__title {
+//     padding: 0 40px;
+//     background-color: #fff;
+//     display: inline-block;
+//   }
 
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
