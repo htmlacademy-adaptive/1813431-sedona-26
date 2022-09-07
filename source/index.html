@@ -70,7 +70,14 @@
             жизнь
           </p>
         </div>
-        <img class="advantages-block__image" width="320" height="260" src="img/advantages1.jpg" alt="Город Седона.">
+        <picture>
+          <source media="(min-width: 1200px)"
+            srcset="img/index/advantages1-desktop.jpg 1x, img/index/advantages1-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)"
+            srcset="img/index/advantages1-tablet.jpg 1x, img/index/advantages1-tablet@2x.jpg 2x">
+          <img class="advantages-block__image" src="img/index/advantages1-mobile.jpg"
+            srcset="img/index/advantages1-mobile@2x.jpg 2x" width="320" height="260" alt="Город Седона.">
+        </picture>
       </div>
 
       <ul class="advantages__items">
@@ -92,7 +99,14 @@
       </ul>
 
       <div class="advantages__block advantages-block">
-        <img class="advantages-block__image" width="320" height="260" src="img/advantages2.jpg" alt="Мост дьявола.">
+        <picture>
+          <source media="(min-width: 1200px)"
+            srcset="img/index/advantages2-desktop.jpg 1x, img/index/advantages2-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)"
+            srcset="img/index/advantages2-tablet.jpg 1x, img/index/advantages2-tablet@2x.jpg 2x">
+          <img class="advantages-block__image" src="img/index/advantages2-mobile.jpg"
+            srcset="img/index/advantages2-mobile@2x.jpg 2x" width="320" height="260" alt="Мост дьявола.">
+        </picture>
         <div class="advantages-block__description advantages-block__description--primary">
           <h3 class="advantages-block__title title title--primary">Там есть <br> мост дьявола</h3>
           <span class="advantages-block__number number number--primary">– №2 –</span>
