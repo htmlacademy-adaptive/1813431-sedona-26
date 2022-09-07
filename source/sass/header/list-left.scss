@@ -13,11 +13,15 @@
     background-color: #ffffff;
   }
 
-  // .list-left__item {
-  //   &:first-child {
-  //     margin-right: 75px;
-  //   }
-  // }
+  .list-left__item {
+    &:first-child {
+      margin-right: 75px;
+    }
+
+    // &:nth-child(odd) {
+    //   margin-right: 75px;
+    // }
+  }
 }
 
 @media (min-width: variables.$desktop-width) {
@@ -25,9 +29,9 @@
     padding-left: 91px;
   }
 
-  // .list-left__item {
-  //   &:first-child {
-  //     margin-right: 162px;
-  //   }
-  // }
+  .list-left__item {
+    &:first-child {
+      margin-right: 162px;
+    }
+  }
 }

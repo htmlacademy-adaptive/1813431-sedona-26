@@ -11,16 +11,16 @@
 
 @media (min-width: variables.$tablet-width) {
   .list-right {
-    justify-items: end;
+    justify-items: flex-end;
     padding-right: 28px;
   }
 
   .list-right__item {
     box-shadow: none;
 
-    // &:first-child {
-    //   margin-right: 52px;
-    // }
+    &:first-child {
+      margin-right: 52px;
+    }
 
     &:last-child {
       box-shadow: none;
@@ -33,11 +33,11 @@
     padding-right: 71px;
   }
 
-  // .list-right__item {
-  //   box-shadow: none;
+  .list-right__item {
+    box-shadow: none;
 
-  //   &:first-child {
-  //     margin-right: 139px;
-  //   }
-  // }
+    &:first-child {
+      margin-right: 139px;
+    }
+  }
 }

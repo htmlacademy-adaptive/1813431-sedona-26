@@ -93,7 +93,13 @@
   }
 
   .media__image {
-    width: 100%;
+    width: 324px;
+    height: 267px;
+
+    &--wide {
+      width: 648px;
+      height: 400px;
+    }
   }
 
   .media__text-wrapper {
@@ -128,6 +134,14 @@
 
     &:first-child {
       grid-column: 1 / 4;
+    }
+  }
+
+  .media__image {
+    width: 400px;
+
+    &--wide {
+      width: 1200px;
     }
   }
 
