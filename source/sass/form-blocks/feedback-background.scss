@@ -14,8 +14,14 @@
 
   &::after {
     position: absolute;
+    // left: 0;
     bottom: 0;
-    content: url("../../img/bg-figure/bg-figure-mobile.svg");
+    width: 100%;
+    height: 57px;
+    background-image: url("../../img/bg-figure/bg-figure-desktop.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    content: "";
   }
 }
 
@@ -33,9 +39,9 @@
       background-size: 768px auto;
     }
 
-    &::after {
-      content: url("../../img/bg-figure/bg-figure-tablet.svg");
-    }
+    // &::after {
+    //   content: url("../../img/bg-figure/bg-figure-tablet.svg");
+    // }
   }
 }
 
@@ -48,8 +54,8 @@
       background-size: 1200px auto;
     }
 
-    &::after {
-      content: url("../../img/bg-figure/bg-figure-desktop.svg");
-    }
+    // &::after {
+    //   content: url("../../img/bg-figure/bg-figure-desktop.svg");
+    // }
   }
 }

@@ -33,7 +33,7 @@ html {
   min-height: 100%;
   margin: 0;
   color: #333333;
-  background-color: rgb(199, 199, 199);
+  background-color: #f2f2f2;
 }
 
 .main-wrapper {
@@ -107,5 +107,11 @@ button {
 @media (min-width: variables.$desktop-width) {
   .main-wrapper {
     width: 1200px;
+  }
+
+  .page__body-shadow {
+    box-shadow: 0 0 15px 1px #b3b3b3;
+    width: 1200px;
+    margin: 0 auto;
   }
 }

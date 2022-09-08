@@ -247,6 +247,21 @@
     }
   }
 
+  .form-data__title-line {
+    position: relative;
+    margin-bottom: 28px;
+
+    &::before {
+      position: absolute;
+      top: 40%;
+      width: 100%;
+      height: 1px;
+      background-color: #dbdbdb;
+      content: "";
+      // z-index: -1;
+    }
+  }
+
   .form-data__title {
     font-size: 21px;
     line-height: 26px;
@@ -254,6 +269,14 @@
 
     &--contacts {
       margin-left: -18px;
+    }
+
+    &--line {
+      position: relative;
+      width: max-content;
+      margin: 0 auto;
+      padding: 0 65px;
+      background-color: #ffffff;
     }
   }
 
@@ -337,16 +360,20 @@
     }
   }
 
+  .form-data__title-line {
+    margin-bottom: 45;
+  }
+
   .form-data__radio-wrapper {
     grid-template-columns: repeat(3, 270px);
     gap: 0 20px;
-    padding: 0 53px;
+    padding: 10px 53px 0;
   }
 
   .form-data__check-wrapper {
     grid-template-columns: repeat(4, 172px);
     gap: 0 64px;
-    padding: 0 44px;
+    padding: 10px 44px 0;
   }
 
   .form-data__textarea-wrapper {
