@@ -2,14 +2,27 @@
 
 .promo-background {
   position: relative;
-  background-image: url("../../img/catalog-form-background.jpg");
+  width: 100%;
+  background-image: url("../../img/backgrounds/bg-catalog-form-mobile.jpg");
+  background-position: 0 100%;
   background-repeat: no-repeat;
   background-color: #9ccae9;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/backgrounds/bg-catalog-form-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
+
   &::after {
     position: absolute;
+    // left: 0;
     bottom: 0;
-    content: url("../../img/background-figure.svg");
+    width: 100%;
+    height: 57px;
+    background-image: url("../../img/bg-figure/bg-figure-desktop.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    content: "";
   }
 }
 
@@ -18,7 +31,37 @@
   margin: 0 auto;
 }
 
-// @media (min-width: variables.$tablet-width) {
+@media (min-width: variables.$tablet-width) {
+  .promo-background {
+    background-image: url("../../img/backgrounds/bg-catalog-form-tablet.jpg");
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/backgrounds/bg-catalog-form-tablet@2x.jpg");
+      background-size: 768px auto;
+    }
 
-// }
+    // &::after {
+    //   content: url("../../img/bg-figure/bg-figure-tablet.svg");
+    // }
+  }
+
+  .promo-background__image {
+    width: 457px;
+    height: 77px;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .promo-background {
+    background-image: url("../../img/backgrounds/bg-catalog-form-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/backgrounds/bg-catalog-form-desktop@2x.jpg");
+      background-size: 1200px auto;
+    }
+
+    // &::after {
+    //   content: url("../../img/bg-figure/bg-figure-desktop.svg");
+    // }
+  }
+}

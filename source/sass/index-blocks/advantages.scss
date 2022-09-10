@@ -6,43 +6,53 @@
   list-style-type: none;
 }
 
+.advantages__icon {
+  &::before {
+    position: absolute;
+    top: -6px;
+    left: -47px;
+    background-repeat: no-repeat;
+    content: "";
+  }
+}
+
 .advantages__item {
   position: relative;
 
   &--housing::before {
-    position: absolute;
-    top: -6px;
-    left: -47px;
+    // position: absolute;
+    // top: -6px;
+    // left: -47px;
     width: 39px;
     height: 37px;
     background-image: url("../../img/icon/icon-house.svg");
     background-size: 39px 37px;
-    background-repeat: no-repeat;
-    content: "";
+    // background-repeat: no-repeat;
+    // content: "";
   }
 
   &--food::before {
-    position: absolute;
-    top: -6px;
-    left: -47px;
+    // position: absolute;
+    // top: -6px;
+    // left: -47px;
     width: 40px;
     height: 35px;
     background-image: url("../../img/icon/icon-food.svg");
     background-size: 40px 35px;
-    background-repeat: no-repeat;
-    content: "";
+    // background-repeat: no-repeat;
+    // content: "";
   }
 
   &--souvenirs::before {
-    position: absolute;
-    top: -6px;
-    left: -47px;
+    // position: absolute;
+    // top: -6px;
+    // left: -47px;
     width: 32px;
     height: 38px;
     background-image: url("../../img/icon/icon-souvenirs.svg");
     background-size: 32px 38px;
-    background-repeat: no-repeat;
-    content: "";
+    // background-repeat: no-repeat;
+    // content: "";
   }
 
   &:not(:last-child) {
@@ -72,6 +82,10 @@
     text-align: center;
   }
 
+  // .advantages__icon {
+
+  // }
+
   .advantages__item {
     width: 256px;
     margin: 0;
@@ -84,8 +98,8 @@
       height: 75px;
       background-image: url("../../img/icon/icon-house.svg");
       background-size: 75px 75px;
-      background-repeat: no-repeat;
-      content: "";
+      // background-repeat: no-repeat;
+      // content: "";
     }
 
     &--food::before {
@@ -95,8 +109,8 @@
       height: 68px;
       background-image: url("../../img/icon/icon-food.svg");
       background-size: 76px 68px;
-      background-repeat: no-repeat;
-      content: "";
+      // background-repeat: no-repeat;
+      // content: "";
     }
 
     &--souvenirs::before {
@@ -106,8 +120,8 @@
       height: 75px;
       background-image: url("../../img/icon/icon-souvenirs.svg");
       background-size: 64px 75px;
-      background-repeat: no-repeat;
-      content: "";
+      // background-repeat: no-repeat;
+      // content: "";
     }
 
     &:not(:last-child) {

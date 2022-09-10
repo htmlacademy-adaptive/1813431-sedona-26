@@ -2,15 +2,25 @@
 
 .about-background {
   position: relative;
-  background-image: url("../../img/index-background.jpg");
+  background-image: url("../../img/backgrounds/bg-index-mobile.jpg");
   background-color: #9ccae9;
   background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/backgrounds/bg-index-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 
   &::after {
     position: absolute;
     left: 0;
-    bottom: -1px;
-    content: url("../../img/background-figure.svg");
+    bottom: 0;
+    width: 100%;
+    height: 57px;
+    background-image: url("../../img/bg-figure/bg-figure-desktop.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    content: "";
   }
 }
 
@@ -23,30 +33,43 @@
   .about-background {
     width: 100%;
     height: 518px;
+    background-image: url("../../img/backgrounds/bg-index-tablet.jpg");
     background-size: 100% auto;
 
-    &::after {
-      position: absolute;
-      left: 0;
-      bottom: -1px;
-      width: 768px;
-      content: url("../../img/background-figure-big.svg");
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/backgrounds/bg-index-tablet@2x.jpg");
+      background-size: 768px auto;
     }
+
+    // &::after {
+    //   position: absolute;
+    //   left: 0;
+    //   bottom: -1px;
+    //   content: url("../../img/bg-figure/bg-figure-tablet.svg");
+    // }
+  }
+
+  .about-background__image {
+    width: 460px;
+    height: 350px;
   }
 }
 
 @media (min-width: variables.$desktop-width) {
   .about-background {
-    // width: 768px;
-    background-size: 100% auto;
+    background-image: url("../../img/backgrounds/bg-index-desktop.jpg");
 
-    &::after {
-      position: absolute;
-      left: 0;
-      bottom: -1px;
-      transform: translate(0, 0);
-      width: 1200px;
-      content: url("../../img/background-figure-big.svg");
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/backgrounds/bg-index-desktop@2x.jpg");
+      background-size: 1200px auto;
     }
+
+    // &::after {
+    //   position: absolute;
+    //   left: 0;
+    //   bottom: -1px;
+    //   transform: translate(0, 0);
+    //   content: url("../../img/bg-figure/bg-figure-desktop.svg");
+    // }
   }
 }

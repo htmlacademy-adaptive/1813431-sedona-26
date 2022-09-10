@@ -140,11 +140,11 @@
 
   // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
   .main-nav__list {
-    width: 260px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    // display: flex;
-    // flex-wrap: wrap;
+    width: 280px;
+    // display: grid;
+    // grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .main-nav__item {
@@ -179,6 +179,6 @@
 
 @media (min-width: variables.$desktop-width) {
   .main-nav__list {
-    width: 420px;
+    width: 410px;
   }
 }
