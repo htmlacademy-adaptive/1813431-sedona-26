@@ -232,18 +232,35 @@
 
 @media (min-width: variables.$tablet-width) {
   .form-data__contacts {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 280px 280px;
+    gap: 0 88px;
+
+
+    // display: flex;
+    // justify-content: space-between;
+    // max-width: 648px;
   }
 
   .form-data__group-wrapper {
+    position: relative;
+    margin-bottom: 48px;
     padding: 0;
     border: none;
-    margin-bottom: 48px;
 
     &:first-child {
-      padding-right: 43px;
-      border-right: 1px solid #dbdbdb;
+      // padding-right: 43px;
+      // border-right: 1px solid #dbdbdb;
+
+      &::after {
+        position: absolute;
+        top: 0;
+        right: -43px;
+        width: 1px;
+        height: 100%;
+        background-color: #dbdbdb;
+        content: "";
+      }
     }
   }
 
@@ -273,7 +290,8 @@
 
     &--line {
       position: relative;
-      width: max-content;
+      // width: max-content;
+      max-width: 500px;
       margin: 0 auto;
       padding: 0 65px;
       background-color: #ffffff;
@@ -340,10 +358,19 @@
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 @media (min-width: variables.$desktop-width) {
+  .form-data__contacts {
+    grid-template-columns: 430px 402px;
+    gap: 0 128px;
+  }
+
   .form-data__group-wrapper {
     &:first-child {
-      padding-right: 63px;
-      border-right: 1px solid #dbdbdb;
+      // padding-right: 63px;
+      // border-right: 1px solid #dbdbdb;
+
+      &::after {
+        right: -63px;
+      }
     }
   }
 
