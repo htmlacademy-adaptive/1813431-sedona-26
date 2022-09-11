@@ -290,8 +290,8 @@
 
     &--line {
       position: relative;
-      // width: max-content;
-      max-width: 500px;
+      width: max-content;
+      max-width: 410px;
       margin: 0 auto;
       padding: 0 65px;
       background-color: #ffffff;
@@ -300,15 +300,15 @@
 
   .form-data__radio-wrapper {
     display: grid;
-    grid-template-columns: repeat(2, 260px);
+    grid-template-columns: repeat(2, 280px);
     gap: 0 20px;
     padding: 10px 33px 0;
   }
 
   .form-data__check-wrapper {
     display: grid;
-    grid-template-columns: repeat(2, 260px);
-    gap: 16px 20px;
+    grid-template-columns: repeat(2, 224px);
+    gap: 0 32px;
     padding: 10px 84px 0;
   }
 
