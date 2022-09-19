@@ -163,7 +163,7 @@
   // }
 }
 
-.form-data__check:checked+.form-data__mark--check:active {
+.form-data__check:checked + .form-data__mark--check:active {
   opacity: 0.3;
   background-color: #979797;
 }
