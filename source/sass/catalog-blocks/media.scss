@@ -65,6 +65,10 @@
 
 .media__button-icon {
   opacity: 0.3;
+
+  &:hover {
+    opacity: 0.1;
+  }
 }
 
 .media__number {
@@ -161,7 +165,11 @@
   }
 
   .media__button-icon {
-    color: #ffffff;
+    fill: #ffffff;
     opacity: 1;
+
+    &:hover {
+      opacity: 0.5;
+    }
   }
 }
