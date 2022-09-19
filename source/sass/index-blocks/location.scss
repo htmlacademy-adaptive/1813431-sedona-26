@@ -1,4 +1,18 @@
+@use "./variables.scss";
+
 .location__map {
   border: none;
   display: block;
+}
+
+@media (min-width: variables.$tablet-width) {
+.location__map {
+    width: 768px;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .location__map {
+    width: 1200px;
+  }
 }

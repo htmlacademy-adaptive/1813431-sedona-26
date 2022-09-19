@@ -126,7 +126,7 @@
   content: "";
 }
 
-.form-data__radio:checked:active + .form-data__mark--radio::before {
+.form-data__radio:checked + .form-data__mark--radio:active::before {
   position: absolute;
   top: 15px;
   left: 15px;
@@ -158,9 +158,14 @@
   background-position: center;
   background-repeat: no-repeat;
 
-  &:active {
-    opacity: 0.3;
-  }
+  // &:active {
+
+  // }
+}
+
+.form-data__check:checked+.form-data__mark--check:active {
+  opacity: 0.3;
+  background-color: #979797;
 }
 
 .form-data__phone-logo {
