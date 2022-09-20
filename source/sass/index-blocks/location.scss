@@ -1,13 +1,15 @@
 @use "./variables.scss";
 
 .location__map {
+  // display: block;
   border: none;
-  display: block;
+  margin-bottom: 11px;
 }
 
 @media (min-width: variables.$tablet-width) {
   .location__map {
     width: 768px;
+    margin: 0;
   }
 }
 
