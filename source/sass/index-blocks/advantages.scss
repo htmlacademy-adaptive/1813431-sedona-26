@@ -81,8 +81,6 @@
 @media (min-width: variables.$tablet-width) {
   .advantages__block {
     display: flex;
-
-    &:last-of-type {}
   }
 
   .advantages__items {
@@ -126,9 +124,9 @@
       // content: "";
     }
 
-      &--souvenirs {
-        padding: 0 31px;
-      }
+    &--souvenirs {
+      padding: 0 31px;
+    }
 
     &--souvenirs::before {
       top: -101px;
@@ -173,6 +171,7 @@
     &--food {
       padding: 0 49px;
     }
+
     &--food::before {
       left: 161px;
     }
@@ -180,6 +179,7 @@
     &--souvenirs {
       padding: 0 85px;
     }
+
     &--souvenirs::before {
       left: 167px;
     }
