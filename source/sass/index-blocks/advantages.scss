@@ -2,7 +2,7 @@
 
 .advantages__items {
   margin: 0;
-  padding: 32px 18px 52px 65px;
+  padding: 32px 18px 51px 65px;
   list-style-type: none;
 }
 
@@ -48,7 +48,7 @@
   }
 
   &--souvenirs {
-    margin-left: -3px;
+    margin-left: -4px;
   }
 
   &--souvenirs::before {
@@ -73,14 +73,16 @@
 }
 
 @media (max-width: variables.$mobile-width-only) {
-  .advantages__text br {
-    display: none;
-  }
+  // .advantages__text br {
+  //   display: none;
+  // }
 }
 
 @media (min-width: variables.$tablet-width) {
   .advantages__block {
     display: flex;
+
+    &:last-of-type {}
   }
 
   .advantages__items {
@@ -90,17 +92,16 @@
     text-align: center;
   }
 
-  // .advantages__icon {
-
-  // }
-
   .advantages__item {
     width: 256px;
     margin: 0;
-    padding: 0 28px;
+    // padding: 0 31px;
+    &--housing {
+      padding: 0 31px;
+    }
 
     &--housing::before {
-      top: -100px;
+      top: -99px;
       left: 90px;
       width: 75px;
       height: 75px;
@@ -110,8 +111,12 @@
       // content: "";
     }
 
+    &--food {
+      padding: 0 50px;
+    }
+
     &--food::before {
-      top: -97px;
+      top: -95px;
       left: 90px;
       width: 76px;
       height: 68px;
@@ -121,9 +126,13 @@
       // content: "";
     }
 
+      &--souvenirs {
+        padding: 0 31px;
+      }
+
     &--souvenirs::before {
-      top: -103px;
-      left: 90px;
+      top: -101px;
+      left: 95px;
       width: 64px;
       height: 75px;
       background-image: url("../../img/icon/icon-souvenirs.svg");
@@ -136,11 +145,21 @@
       margin-bottom: 0;
     }
   }
+
+  .advantages__title {
+    margin-bottom: 24px;
+    letter-spacing: 1.6px;
+  }
+
+  .advantages__text-padding {
+    padding: 0 13px;
+  }
 }
 
 @media (min-width: variables.$desktop-width) {
   .advantages__items {
     display: flex;
+    padding-bottom: 80px;
   }
 
   .advantages__item {
@@ -148,15 +167,25 @@
     padding: 0 65px;
 
     &--housing::before {
-      left: 166px;
+      left: 161px;
     }
 
+    &--food {
+      padding: 0 49px;
+    }
     &--food::before {
-      left: 168px;
+      left: 161px;
     }
 
-    &--souvenirs::before {
-      left: 164px;
+    &--souvenirs {
+      padding: 0 85px;
     }
+    &--souvenirs::before {
+      left: 167px;
+    }
+  }
+
+  .advantages__text-padding {
+    padding: 0;
   }
 }

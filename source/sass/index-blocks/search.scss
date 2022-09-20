@@ -1,7 +1,7 @@
 @use "./variables.scss";
 
 .search {
-  padding: 41px 18px 49px;
+  padding: 42px 18px 49px;
   text-align: center;
 }
 
@@ -27,17 +27,26 @@
 
 @media (min-width: variables.$tablet-width) {
   .search {
-    padding: 61px 155px 58px;
+    padding: 50px 155px 58px;
   }
 
   .search__title {
     font-size: 30px;
-    line-height: 26px;
+    line-height: 43px;
+    margin-bottom: 25px;
+  }
+
+  .search__text {
+    margin-bottom: 42px;
   }
 }
 
 @media (min-width: variables.$desktop-width) {
   .search {
-    padding: 61px 371px 66px;
+    padding: 50px 371px 68px;
+  }
+
+  .search__text {
+    margin-bottom: 46px;
   }
 }

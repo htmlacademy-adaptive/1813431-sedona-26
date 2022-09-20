@@ -6,10 +6,12 @@
 }
 
 .main-footer__hashtag {
+  margin-right: 2px;
   margin-bottom: 33px;
 }
 
 .main-footer__social {
+  margin-left: 3px;
   margin-bottom: 35px;
 }
 
@@ -18,7 +20,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 36px 120px 36px 110px;
+    padding: 37px 60px 36px 59px;
   }
 
   .main-footer__hashtag {
@@ -27,5 +29,11 @@
 
   .main-footer__social {
     margin: 0;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .main-footer {
+    padding: 37px 120px 36px 119px;
   }
 }
