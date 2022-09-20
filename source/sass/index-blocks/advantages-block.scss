@@ -5,7 +5,7 @@
 }
 
 .advantages-block__description {
-  padding: 39px 0 40px;
+  padding: 39px 0 37px;
   // padding-left: 20px;
   // padding-right: 20px;
   text-align: center;
@@ -20,7 +20,7 @@
 
 .advantages-block__description--secondary {
   margin: 0 18px;
-  padding: 26px 18px 24px;
+  padding: 25px 18px 24px;
 
   &:not(:last-child) {
     border-bottom: 1px solid #d6d6d6;
@@ -43,7 +43,7 @@
 @media (max-width: variables.$mobile-width-only) {
   .advantages-block__figure {
     position: relative;
-    padding-top: 54px;
+    padding-top: 71px;
 
     &::before {
       position: absolute;
