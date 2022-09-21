@@ -18,7 +18,6 @@
 .media__image {
   display: block;
   object-fit: cover;
-  // margin-bottom: 15px;
 }
 
 .media__text-wrapper {
@@ -51,17 +50,6 @@
   margin-right: 14px;
   background: none;
   cursor: pointer;
-
-  // &::before {
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   width: 23px;
-  //   height: 21px;
-  //   background-image: url("../../img/icon/icon-like.svg");
-  //   background-repeat: no-repeat;
-  //   content: "";
-  // }
 }
 
 .media__button-icon {
@@ -152,8 +140,6 @@
   }
 
   .media__text-wrapper {
-    // display: flex;
-    // justify-content: space-between;
 
     position: absolute;
     right: 0;

@@ -20,15 +20,10 @@
   position: relative;
 
   &--housing::before {
-    // position: absolute;
-    // top: -6px;
-    // left: -47px;
     width: 39px;
     height: 37px;
     background-image: url("../../img/icon/icon-house.svg");
     background-size: 39px 37px;
-    // background-repeat: no-repeat;
-    // content: "";
   }
 
   &--food {
@@ -36,15 +31,11 @@
   }
 
   &--food::before {
-    // position: absolute;
-    // top: -6px;
     left: -52px;
     width: 40px;
     height: 35px;
     background-image: url("../../img/icon/icon-food.svg");
     background-size: 40px 35px;
-    // background-repeat: no-repeat;
-    // content: "";
   }
 
   &--souvenirs {
@@ -52,15 +43,12 @@
   }
 
   &--souvenirs::before {
-    // position: absolute;
     top: -8px;
     left: -41px;
     width: 32px;
     height: 38px;
     background-image: url("../../img/icon/icon-souvenirs.svg");
     background-size: 32px 38px;
-    // background-repeat: no-repeat;
-    // content: "";
   }
 
   &:not(:last-child) {
@@ -73,9 +61,6 @@
 }
 
 @media (max-width: variables.$mobile-width-only) {
-  // .advantages__text br {
-  //   display: none;
-  // }
 }
 
 @media (min-width: variables.$tablet-width) {
@@ -93,7 +78,6 @@
   .advantages__item {
     width: 256px;
     margin: 0;
-    // padding: 0 31px;
     &--housing {
       padding: 0 31px;
     }
@@ -105,8 +89,6 @@
       height: 75px;
       background-image: url("../../img/icon/icon-house.svg");
       background-size: 75px 75px;
-      // background-repeat: no-repeat;
-      // content: "";
     }
 
     &--food {
@@ -120,8 +102,6 @@
       height: 68px;
       background-image: url("../../img/icon/icon-food.svg");
       background-size: 76px 68px;
-      // background-repeat: no-repeat;
-      // content: "";
     }
 
     &--souvenirs {
@@ -135,8 +115,6 @@
       height: 75px;
       background-image: url("../../img/icon/icon-souvenirs.svg");
       background-size: 64px 75px;
-      // background-repeat: no-repeat;
-      // content: "";
     }
 
     &:not(:last-child) {
