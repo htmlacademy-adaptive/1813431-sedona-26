@@ -245,7 +245,6 @@
     border: none;
 
     &:first-child {
-
       &::after {
         position: absolute;
         top: 0;
@@ -329,7 +328,6 @@
 
   .form-data__group-wrapper {
     &:first-child {
-
       &::after {
         right: -63px;
       }

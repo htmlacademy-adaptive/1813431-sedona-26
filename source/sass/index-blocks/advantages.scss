@@ -60,9 +60,6 @@
   margin-bottom: 16px;
 }
 
-@media (max-width: variables.$mobile-width-only) {
-}
-
 @media (min-width: variables.$tablet-width) {
   .advantages__block {
     display: flex;
@@ -78,6 +75,7 @@
   .advantages__item {
     width: 256px;
     margin: 0;
+
     &--housing {
       padding: 0 31px;
     }
