@@ -7,7 +7,7 @@
 }
 
 .media__item {
-  padding: 24px 20px;
+  padding: 24px 20px 22px;
   border-top: 1px solid #e5e5e5;
 
   &:last-child {
@@ -18,7 +18,6 @@
 .media__image {
   display: block;
   object-fit: cover;
-  // margin-bottom: 15px;
 }
 
 .media__text-wrapper {
@@ -29,7 +28,7 @@
   font-weight: 700;
   font-size: 14px;
   margin: 0;
-  margin-bottom: 6px;
+  margin-bottom: 1px;
   text-transform: uppercase;
 }
 
@@ -41,6 +40,7 @@
 .media__button-wrapper {
   display: flex;
   align-items: flex-end;
+  margin-bottom: 8px;
 }
 
 .media__button {
@@ -50,17 +50,6 @@
   margin-right: 14px;
   background: none;
   cursor: pointer;
-
-  // &::before {
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   width: 23px;
-  //   height: 21px;
-  //   background-image: url("../../img/icon/icon-like.svg");
-  //   background-repeat: no-repeat;
-  //   content: "";
-  // }
 }
 
 .media__button-icon {
@@ -151,8 +140,6 @@
   }
 
   .media__text-wrapper {
-    // display: flex;
-    // justify-content: space-between;
 
     position: absolute;
     right: 0;

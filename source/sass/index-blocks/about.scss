@@ -1,13 +1,13 @@
 @use "./variables.scss";
 
 .about {
-  padding-bottom: 53px;
+  padding-bottom: 16px;
   text-align: center;
 }
 
 .about__background {
   width: 320px;
-  margin-bottom: 32px;
+  margin-bottom: 34px;
   padding: 90px 0 85px;
 }
 
@@ -26,13 +26,14 @@
   }
 
   .about__background {
-    margin-bottom: 47px;
+    margin-bottom: 49px;
     padding: 77px 0 91px;
   }
 
   .about__slogan {
     font-size: 21px;
     line-height: 26px;
+    margin-bottom: 29px;
   }
 }
 
@@ -43,7 +44,7 @@
   }
 
   .about__background {
-    margin-bottom: 59px;
+    margin-bottom: 60px;
   }
 
   .about__text-wrapper {

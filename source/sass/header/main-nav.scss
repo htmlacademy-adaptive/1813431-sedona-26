@@ -138,11 +138,8 @@
     justify-content: space-between;
   }
 
-  // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
   .main-nav__list {
-    width: 280px;
-    // display: grid;
-    // grid-template-columns: 1fr 1fr;
+    width: 282px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -161,7 +158,6 @@
     line-height: 21px;
     padding: 18px 0 17px;
     color: #000000;
-    letter-spacing: -1px;
 
     &--current {
       color: variables.$currentColor;

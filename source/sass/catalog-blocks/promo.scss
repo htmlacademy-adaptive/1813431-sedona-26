@@ -1,7 +1,7 @@
 @use "./variables.scss";
 
 .promo {
-  padding-bottom: 25px;
+  padding-bottom: 35px;
 }
 
 .promo__background {
@@ -16,7 +16,7 @@
 }
 
 .promo__title {
-  margin-bottom: 34px;
+  margin-bottom: 27px;
 }
 
 @media (max-width: variables.$mobile-width-only) {
@@ -27,7 +27,7 @@
 
 @media (min-width: variables.$tablet-width) {
   .promo {
-    padding-bottom: 67px;
+    padding-bottom: 80px;
   }
 
   .promo__background {
@@ -53,13 +53,18 @@
   .promo__title {
     font-size: 30px;
     line-height: 26px;
+    margin-bottom: 33px;
   }
 }
 
 @media (min-width: variables.$desktop-width) {
-  .promo-background {
+  .promo {
+    padding-bottom: 88px;
+  }
+
+  .promo__background {
     height: 301px;
-    margin-bottom: 100px;
+    margin-bottom: 98px;
     padding: 101px 0 120px;
   }
 

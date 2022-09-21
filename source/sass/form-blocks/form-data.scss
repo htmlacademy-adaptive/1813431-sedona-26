@@ -157,10 +157,6 @@
   background-image: url("../../img/icon/icon-tick.svg");
   background-position: center;
   background-repeat: no-repeat;
-
-  // &:active {
-
-  // }
 }
 
 .form-data__check:checked + .form-data__mark--check:active {
@@ -240,11 +236,6 @@
     display: grid;
     grid-template-columns: 280px 280px;
     gap: 0 88px;
-
-
-    // display: flex;
-    // justify-content: space-between;
-    // max-width: 648px;
   }
 
   .form-data__group-wrapper {
@@ -254,9 +245,6 @@
     border: none;
 
     &:first-child {
-      // padding-right: 43px;
-      // border-right: 1px solid #dbdbdb;
-
       &::after {
         position: absolute;
         top: 0;
@@ -280,7 +268,6 @@
       height: 1px;
       background-color: #dbdbdb;
       content: "";
-      // z-index: -1;
     }
   }
 
@@ -333,35 +320,6 @@
   }
 }
 
-// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-// .line {
-//   position: relative;
-
-//   &::before {
-//     content: "";
-//     position: absolute;
-//     top: 50%;
-//     height: 2px;
-//     width: 100%;
-//     background-color: red;
-//     z-index: -1;
-//   }
-// }
-
-//   .line-container {
-//     max-width: 1220px;
-//     margin: 0 auto;
-//   }
-
-//   .line__title {
-//     padding: 0 40px;
-//     background-color: #fff;
-//     display: inline-block;
-//   }
-
-// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
 @media (min-width: variables.$desktop-width) {
   .form-data__contacts {
     grid-template-columns: 430px 402px;
@@ -370,9 +328,6 @@
 
   .form-data__group-wrapper {
     &:first-child {
-      // padding-right: 63px;
-      // border-right: 1px solid #dbdbdb;
-
       &::after {
         right: -63px;
       }

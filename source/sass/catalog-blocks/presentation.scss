@@ -11,7 +11,7 @@
 }
 
 .presentation__title {
-  margin-bottom: 33px;
+  margin-bottom: 27px;
 }
 
 .presentation__video-wrapper {
@@ -21,7 +21,7 @@
 .presentation__button {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 170px;
   transform: translate(-50%, -50%);
   width: 48px;
   height: 54px;
@@ -34,29 +34,33 @@
 
 @media (min-width: variables.$tablet-width) {
   .presentation {
-    padding: 58px 0 40px;
+    padding: 56px 0 40px;
   }
 
   .presentation__text-wrapper {
-    margin-bottom: 70px;
+    margin-bottom: 89px;
     padding: 0 160px;
   }
 
   .presentation__title {
     font-size: 30px;
     line-height: 26px;
+    margin-bottom: 32px;
   }
 
   .presentation__image {
     width: 648px;
     height: 500px;
-    padding: 0 60px;
+  }
+
+  .presentation__button {
+    left: 50%;
   }
 }
 
 @media (min-width: variables.$desktop-width) {
   .presentation {
-    padding: 62px 200px 84px;
+    padding: 60px 200px 84px;
   }
 
   .presentation__text-wrapper {

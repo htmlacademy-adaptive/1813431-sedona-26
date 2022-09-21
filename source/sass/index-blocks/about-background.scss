@@ -40,13 +40,6 @@
       background-image: url("../../img/backgrounds/bg-index-tablet@2x.jpg");
       background-size: 768px auto;
     }
-
-    // &::after {
-    //   position: absolute;
-    //   left: 0;
-    //   bottom: -1px;
-    //   content: url("../../img/bg-figure/bg-figure-tablet.svg");
-    // }
   }
 
   .about-background__image {
@@ -63,13 +56,5 @@
       background-image: url("../../img/backgrounds/bg-index-desktop@2x.jpg");
       background-size: 1200px auto;
     }
-
-    // &::after {
-    //   position: absolute;
-    //   left: 0;
-    //   bottom: -1px;
-    //   transform: translate(0, 0);
-    //   content: url("../../img/bg-figure/bg-figure-desktop.svg");
-    // }
   }
 }

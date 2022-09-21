@@ -57,6 +57,10 @@ html {
   &--primary {
     color: #ffffff;
   }
+
+  &--secondary {
+    letter-spacing: 0.2px;
+  }
 }
 
 .main-title {
@@ -67,6 +71,10 @@ html {
 .text {
   margin: 0;
   text-transform: uppercase;
+
+  &--primary {
+    padding: 0 8px;
+  }
 }
 
 .button {
@@ -113,5 +121,11 @@ button {
     box-shadow: 0 0 15px 1px #b3b3b3;
     width: 1200px;
     margin: 0 auto;
+  }
+
+  .text {
+    &--primary {
+      padding: 0 21px;
+    }
   }
 }

@@ -9,6 +9,8 @@
   <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
   <link rel="icon" href="img/favicons/android-icon-192x192.png">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
   <title>Сайт города Седона</title>
 </head>
 
@@ -66,7 +68,7 @@
 
         <div class="advantages__block advantages-block">
           <div class="advantages-block__description advantages-block__description--primary advantages-block__figure">
-            <h3 class="advantages-block__title title title--primary">Настоящий <br> городок</h3>
+            <h3 class="advantages-block__title title title--primary">Настоящий городок</h3>
             <span class=" advantages-block__number number number--primary">– №1 –</span>
             <p class="advantages-block__text text text--primary">Седона не аттрацион для туристов, там&nbsp;течет своя
               жизнь
@@ -92,22 +94,29 @@
         <ul class="advantages__items">
           <li class="advantages__item advantages__icon advantages__item--housing">
             <h3 class="advantages__title title title--secondary">Жилье</h3>
-            <p class="advantages__text text text--secondary">Рекомендуем пожить в настоящем мотеле, все <br> как в кино!
+            <p class="advantages__text text text--secondary">Рекомендуем пожить в настоящем мотеле, все как в кино!
             </p>
           </li>
           <li class="advantages__item advantages__icon advantages__item--food">
             <h3 class="advantages__title title title--secondary">Еда</h3>
-            <p class="advantages__text text text--secondary">Всегда заказывайте фирменый&nbsp;бургер, <br> вы не
-              разочаруетесь!
+            <p class="advantages__text text text--secondary">Всегда заказывайте фирменный бургер,
+              вы не разочаруетесь!
             </p>
           </li>
           <li class="advantages__item advantages__icon advantages__item--souvenirs">
             <h3 class="advantages__title title title--secondary">Сувениры</h3>
-            <p class="advantages__text text text--secondary">Не только китайского, но и&nbsp;местного производства!</p>
+            <p class="advantages__text text text--secondary">Не только китайского, но и местного производства!</p>
           </li>
         </ul>
 
         <div class="advantages__block advantages-block">
+          <div
+            class="advantages-block__description advantages-block__description--primary advantages-block__padding advantages-block__opposite">
+            <h3 class="advantages-block__title title title--primary">Там есть мост дьявола</h3>
+            <span class="advantages-block__number number number--primary">– №2 –</span>
+            <p class="advantages-block__text text text--primary">Да, по нему можно пройти! Если вы
+              осмелитесь, конечно</p>
+          </div>
           <picture>
             <source type="image/webp" media="(min-width: 1200px)"
               srcset="img/index/advantages2-desktop.webp 1x, img/index/advantages2-desktop@2x.webp 2x">
@@ -123,32 +132,29 @@
             <img class="advantages-block__image" src="img/index/advantages2-mobile.jpg"
               srcset="img/index/advantages2-mobile@2x.jpg 2x" width="320" height="260" alt="Мост дьявола.">
           </picture>
-          <div class="advantages-block__description advantages-block__description--primary">
-            <h3 class="advantages-block__title title title--primary">Там есть <br> мост дьявола</h3>
-            <span class="advantages-block__number number number--primary">– №2 –</span>
-            <p class="advantages-block__text text text--primary">Да, по нему можно <br> пройти! <br
-                class="advantages-block__text-br"> Если вы
-              осмелитесь,&nbsp;конечно</p>
-          </div>
         </div>
 
         <div class="advantages__block advantages-block advantages-block--secondary">
           <div class="advantages-block__description advantages-block__description--secondary">
-            <h3 class="advantages-block__title title title--secondary">Небольшая <br> площадь</h3>
+            <h3 class="advantages-block__title title title--secondary">Небольшая площадь</h3>
             <span class="advantages-block__number number number--secondary">– №3 –</span>
-            <p class="advantages-block__text text text--secondary">Все интересные места находятся очень близко</p>
+            <p class="advantages-block__text text text--secondary">Все интересные места
+              находятся очень близко</p>
           </div>
           <div class="advantages-block__description advantages-block__description--secondary">
-            <h3 class="advantages-block__title title title--secondary">Красивая <br> дорога</h3>
+            <h3 class="advantages-block__title title title--secondary">Красивая дорога</h3>
             <span class="advantages-block__number number number--secondary">– №4 –</span>
-            <p class="advantages-block__text text text--secondary">Ехать в Седону из<br> Лас-Вегаса совсем
+            <p class="advantages-block__text advantages__text-padding text text--secondary">Ехать в Седону из Лас-Вегаса
+              совсем
               не&nbsp;скучно
             </p>
           </div>
           <div class="advantages-block__description advantages-block__description--secondary">
-            <h3 class="advantages-block__title title title--secondary">Мало <br> туристов</h3>
+            <h3 class="advantages-block__title title title--secondary">Мало туристов</h3>
             <span class="advantages-block__number number number--secondary">– №5 –</span>
-            <p class="advantages-block__text text text--secondary">Большинство едет в гранд каньон и толпится там</p>
+            <p class="advantages-block__text advantages__text-padding text text--secondary">Большинство едет в гранд
+              каньон
+              и толпится там</p>
           </div>
         </div>
       </section>
