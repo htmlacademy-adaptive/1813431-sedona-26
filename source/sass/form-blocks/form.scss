@@ -1,7 +1,7 @@
 @use "./variables.scss";
 
 .form {
-  padding-bottom: 44px;
+  padding-bottom: 55px;
 }
 
 .form__data {
@@ -10,12 +10,12 @@
 
 @media (min-width: variables.$tablet-width) {
   .form {
-    padding: 10px 60px 64px;
+    padding: 10px 60px 70px;
   }
 }
 
 @media (min-width: variables.$desktop-width) {
   .form {
-    padding: 10px 120px 64px;
+    padding: 10px 120px 70px;
   }
 }

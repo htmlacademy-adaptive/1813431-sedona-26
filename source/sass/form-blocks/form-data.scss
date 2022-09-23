@@ -4,8 +4,8 @@
   border-top: 1px solid #d6d6d6;
   padding: 24px 20px 34px;
 
-  &:last-of-type {
-    padding-bottom: 56px;
+  &:first-child {
+    padding-bottom: 39px;
   }
 }
 
@@ -22,7 +22,10 @@
 
 .form-data__control {
   display: block;
-  margin-bottom: 16px;
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
 }
 
 .form-data__text {
@@ -148,7 +151,7 @@
   display: block;
   padding-left: 62px;
 
-  &:not(:last-child) {
+  &:not(:last-of-type) {
     margin-bottom: 36px;
   }
 }
@@ -193,7 +196,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  margin-bottom: 48px;
+  margin-bottom: 16px;
   padding: 16px;
   background-color: #f2f2f2;
   border: none;
@@ -241,11 +244,17 @@
 
   .form-data__group-wrapper {
     position: relative;
-    margin-bottom: 48px;
+    margin-bottom: 58px;
     padding: 0;
     border: none;
 
     &:first-child {
+      padding-bottom: 15px;
+
+      &:last-of-type {
+        margin: 0;
+      }
+
       &::after {
         position: absolute;
         top: 0;
@@ -256,6 +265,10 @@
         content: "";
       }
     }
+  }
+
+  .form-data__group-contacts {
+    margin-bottom: 49px;
   }
 
   .form-data__title-line {
@@ -277,8 +290,12 @@
     line-height: 26px;
     margin-bottom: 28px;
 
+    &--introduction {
+      margin-left: 20px;
+    }
+
     &--contacts {
-      margin-left: -18px;
+      margin-left: -21px;
     }
 
     &--line {
@@ -298,6 +315,10 @@
     padding: 10px 33px 0;
   }
 
+  .form-data__group-attractions {
+    margin-bottom: 18px;
+  }
+
   .form-data__check-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 224px);
@@ -305,7 +326,12 @@
     padding: 10px 84px 0;
   }
 
+  .form-data__group-textarea {
+    margin-bottom: 40px;
+  }
+
   .form-data__textarea {
+    height: 160px;
     margin: 0;
   }
 
@@ -313,11 +339,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-right: 1px;
     padding: 0;
   }
 
   .form-data__button {
     width: 324px;
+  }
+
+  .form-data__hint {
+    font-size: 14px;
+    margin-top: 6px;
   }
 }
 
@@ -328,6 +360,8 @@
   }
 
   .form-data__group-wrapper {
+    margin-bottom: 48px;
+
     &:first-child {
       &::after {
         right: -63px;
@@ -337,6 +371,14 @@
 
   .form-data__contacts-wrapper {
     grid-template-columns: 344px 58px;
+  }
+
+  .form-data__group-contacts {
+    margin-bottom: 57px;
+  }
+
+  .form-data__group-attractions {
+    margin-bottom: 60px;
   }
 
   .form-data__field {
@@ -349,23 +391,46 @@
   }
 
   .form-data__title-line {
-    margin-bottom: 45;
+    margin-bottom: 45px;
+  }
+
+  .form-data__title {
+    &--introduction {
+      margin-left: 31px;
+    }
+
+    &--contacts {
+      margin-left: -33px;
+    }
+
+    &--attractions {
+      margin-bottom: 59px;
+    }
+
+    &--textarea {
+      margin-bottom: 28px;
+    }
   }
 
   .form-data__radio-wrapper {
-    grid-template-columns: repeat(3, 270px);
-    gap: 0 20px;
+    grid-template-columns: repeat(3, max-content);
+    gap: 0 65px;
     padding: 10px 53px 0;
   }
 
   .form-data__check-wrapper {
-    grid-template-columns: repeat(4, 172px);
+    grid-template-columns: repeat(4, max-content);
+    justify-items: start;
     gap: 0 64px;
     padding: 10px 44px 0;
   }
 
   .form-data__textarea-wrapper {
     padding: 0 96px;
+  }
+
+  .form-data__group-textarea {
+    margin-bottom: 42px;
   }
 
   .form-data__button-wrapper {
