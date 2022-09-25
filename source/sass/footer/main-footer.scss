@@ -1,7 +1,7 @@
 @use "./variables.scss";
 
 .main-footer {
-  padding: 23px 18px 23px;
+  padding: 23px 18px;
   text-align: center;
 }
 
@@ -20,7 +20,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 31px 61px 36px 59px;
+    padding: 30px 61px 36px 59px;
   }
 
   .main-footer__hashtag {
@@ -34,6 +34,6 @@
 
 @media (min-width: variables.$desktop-width) {
   .main-footer {
-    padding: 30px 120px 36px 119px;
+    padding: 28px 120px 36px 119px;
   }
 }

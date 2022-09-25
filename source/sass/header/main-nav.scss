@@ -6,6 +6,10 @@
   z-index: 1;
 }
 
+.main-nav__wrapper {
+  text-align: center;
+}
+
 .main-nav__toggle {
   position: absolute;
   top: 17px;
@@ -65,20 +69,6 @@
   top: 0;
   left: 0;
   right: 0;
-  text-align: center;
-}
-
-.main-nav--nojs .main-nav__toggle {
-  display: none;
-}
-
-.main-nav--nojs .main-nav__wrapper {
-  position: static;
-  min-height: 0;
-}
-
-.main-nav--nojs .main-nav__item {
-  display: block;
 }
 
 .main-nav__list {
@@ -178,4 +168,17 @@
   .main-nav__list {
     width: 410px;
   }
+}
+
+.nojs .main-nav__toggle {
+  display: none;
+}
+
+.nojs .main-nav__wrapper {
+  position: static;
+  min-height: 0;
+}
+
+.nojs .main-nav__item {
+  display: block;
 }
