@@ -21,7 +21,7 @@
         <img class="main-header__logo" src="img/logo/logo-header.svg" width="185" height="96"
           alt="Логотип сайта города Седоны.">
       </a>
-      <nav class="main-nav main-nav--closed main-nav--nojs">
+      <nav class="main-nav main-nav--closed nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -110,8 +110,9 @@
 
           <div class="form-data__group-wrapper">
             <fieldset class="form-data__group">
+              <legend class="visually-hidden">Ваше общее впечатление:</legend>
               <div class="form-data__title-line">
-                <p class="form-data__title title form-data__title--line">Ваше общее впечатление:</p>
+                <p class="form-data__title title form-data__title--line" aria-hidden="true">Ваше общее впечатление:</p>
               </div>
               <div class="form-data__radio-wrapper">
                 <label class="form-data__control-radio">
@@ -135,8 +136,9 @@
 
           <div class="form-data__group-wrapper form-data__group-attractions">
             <fieldset class="form-data__group">
+              <legend class="visually-hidden">Ваше общее впечатление:</legend>
               <div class="form-data__title-line form-data__title--attractions">
-                <p class="form-data__title title form-data__title--line">
+                <p class="form-data__title title form-data__title--line" aria-hidden="true">
                   Посещенные<br> достопримечательности:
                 </p>
               </div>
@@ -170,8 +172,9 @@
 
           <div class="form-data__group-wrapper form-data__group-textarea">
             <fieldset class="form-data__group">
+              <legend class="visually-hidden">Ваше общее впечатление:</legend>
               <div class="form-data__title-line form-data__title--textarea">
-                <p class="form-data__title title form-data__title--line">Опишите свои эмоции:</p>
+                <p class="form-data__title title form-data__title--line" aria-hidden="true">Опишите свои эмоции:</p>
               </div>
               <div class="form-data__textarea-wrapper">
                 <textarea class="form-data__textarea" name="text-area"

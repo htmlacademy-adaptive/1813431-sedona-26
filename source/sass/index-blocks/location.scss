@@ -1,19 +1,49 @@
 @use "./variables.scss";
 
+.location {
+  padding-bottom: 17px;
+}
+
+.location__wrapper {
+  width: 320px;
+  height: 350px;
+  padding-bottom: 11px;
+  background-image: url("../img/index/map-mobile.jpg");
+  background-repeat: no-repeat;
+}
+
 .location__map {
   border: none;
-  margin-bottom: 11px;
+}
+
+.nojs .location__map {
+  display: none;
 }
 
 @media (min-width: variables.$tablet-width) {
+  .location {
+    padding-bottom: 7px;
+  }
+
   .location__map {
     width: 768px;
-    margin: 0;
+  }
+
+  .location__wrapper {
+    width: 768px;
+    background-image: url("../img/index/map-tablet.jpg");
+    background-repeat: no-repeat;
   }
 }
 
 @media (min-width: variables.$desktop-width) {
   .location__map {
     width: 1200px;
+  }
+
+  .location__wrapper {
+    width: 1200px;
+    background-image: url("../img/index/map-desktop.jpg");
+    background-repeat: no-repeat;
   }
 }
